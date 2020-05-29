@@ -104,7 +104,7 @@ static void squashKeyData( struct flower_hash_lookup_block* hash, int keyIndex )
 // the least significant byte.  (leaving the remaining bits)
 
 static FPI saveKeyData( struct flower_hash_lookup_block *hash, const uint8_t *key, uint8_t keylen ) {
-	if( keylen > 8 ) DebugBreak();
+	//if( keylen > 8 ) DebugBreak();
 	uint8_t * this_name_block = hash->key_data_first_block;
 	uint8_t * start = this_name_block;
 	size_t max_key_data = hash->info.key_data_blocks * KEY_BLOCK_SIZE;
@@ -1320,7 +1320,7 @@ struct flower_hash_lookup_block* convertFlowerHashBlock( struct flower_hash_look
 					}
 				}
 				else {
-					printf( "key has no data, must match in this block\n" );
+					//printf( "key has no data, must match in this block\n" );
 				}
 			}
 		}

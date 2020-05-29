@@ -27,8 +27,8 @@ struct cpp_flower_pot {
 
     struct flower_hash_lookup_block *hash;
     cpp_flower_pot() {
-        //hash = InitFlowerHash( IFHEO_IMMUTABLE|IFHEO_NO_DUPLICATES );
-        hash = InitFlowerHash( IFHEO_CONVERTIBLE|IFHEO_NO_DUPLICATES );
+        hash = InitFlowerHash( IFHEO_IMMUTABLE|IFHEO_NO_DUPLICATES );
+        //hash = InitFlowerHash( IFHEO_CONVERTIBLE|IFHEO_NO_DUPLICATES );
 
         // this fails.
         //hash = InitFlowerHash( IFHEO_DENSE|IFHEO_NO_DUPLICATES );

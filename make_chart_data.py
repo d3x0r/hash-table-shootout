@@ -38,6 +38,7 @@ for line in lines:
         by_benchtype.setdefault("%s-memory"  % benchtype, {}).setdefault(program, []).append([nkeys, nbytes])
 
 proper_names = {
+    'd3x0r_genhash': 'd3x0r generic hash',
     'boost_unordered_map': 'Boost 1.38 unordered_map',
     'stl_unordered_map': 'GCC 4.4 std::unordered_map',
     'google_sparse_hash_map': 'Google sparsehash 1.5.2 sparse_hash_map',
@@ -51,6 +52,7 @@ proper_names = {
 # do them in the desired order to make the legend not overlap the chart data
 # too much
 program_slugs = [
+    'd3x0r_genhash',
     'google_sparse_hash_map',
     'google_dense_hash_map',
     'stl_unordered_map',

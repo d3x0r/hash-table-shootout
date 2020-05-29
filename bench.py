@@ -12,9 +12,9 @@ programs = [
     'ruby_hash',
 ]
 
-minkeys  =  2*1000*1000
-maxkeys  = 40*1000*1000
-interval =  2*1000*1000
+minkeys  =  2*1000*10#00
+maxkeys  = 40*1000*10#00
+interval =  2*1000*10#00
 best_out_of = 2
 
 # for the final run, use this:
@@ -45,7 +45,7 @@ for benchtype in benchtypes:
 
                 # wait for the program to fill up memory and spit out its "ready" message
                 try:
-                    runtime = float(proc.stdout.readline().strip())
+                    runtime = float(proc.stdout.readline().strip())*100
                 except:
                     runtime = 0
 
