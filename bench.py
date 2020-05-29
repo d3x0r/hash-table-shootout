@@ -1,6 +1,7 @@
 import sys, os, subprocess, signal
 
 programs = [
+    'd3x0r_genhash',
     'glib_hash_table',
     'stl_unordered_map',
     'boost_unordered_map',
